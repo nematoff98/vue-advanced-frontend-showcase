@@ -49,10 +49,3 @@ A centralized Axios wrapper that handles:
 - Centralized **Error Handling** (e.g., 401 Unauthorized redirect to login).
 - Type-safe CRUD operations (GET, POST, PUT, DELETE).
 
----
-
-## 🚀 Getting Started
-
-### Installation
-```bash
-npm install
