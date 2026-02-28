@@ -1,0 +1,14 @@
+.dark {
+  .ant-modal-content {
+    background-color: var(--color-gray-800);
+
+    .ant-modal-header {
+      background-color: var(--color-gray-800);
+      border-bottom: 1px solid rgb(225, 225, 225, 0.05);
+    }
+  }
+
+  .ant-modal-close-icon {
+    color: var(--color-white-100);
+  }
+}

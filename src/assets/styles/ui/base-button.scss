@@ -1,0 +1,63 @@
+@use '@/assets/styles/utils' as utils;
+@import "../colors";
+
+.ant-btn {
+  &.btn-gray {
+    color: var(--color-gray-700);
+    background-color: var(--color-gray-50);
+    border: 0;
+
+    &:hover {
+      background-color: var(--color-gray-100);
+    }
+
+    &:disabled {
+      background-color: var(--color-gray-50);
+      color: var(--color-gray-300);
+    }
+  }
+
+  &.btn-m {
+    &.btn-square {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: utils.toRem(40px);
+      height: utils.toRem(40px);
+      padding: utils.toRem(10px);
+    }
+  }
+}
+
+.dark {
+  .ant-btn {
+    &[disabled] {
+      color: var(--color-gray-300);
+    }
+
+    &.ant-btn-default {
+       color: var(--color-primary-500);
+    }
+
+    &.ant-btn-default.text-primary-600 {
+      color: var(--color-white-100);
+    }
+
+    &.btn-gray {
+      color: var(--color-white-100);
+      background-color: var(--color-gray-700);
+
+      &:hover {
+        background-color: var(--color-gray-600);
+      }
+    }
+
+    svg {
+      color: var(--color-white-100);
+
+      path {
+        stroke: var(--color-white-100);
+      }
+    }
+  }
+}

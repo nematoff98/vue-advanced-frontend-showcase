@@ -1,0 +1,13 @@
+@use '@/assets/styles/utils' as utils;
+
+:global(.description .ant-descriptions-header) {
+  @apply border-b border-dashed mb-1 border-gray-100 pb-3 mb-0
+}
+
+:global(.description-item) {
+  padding-bottom: utils.toRem(4px) !important;
+}
+
+:global(.description-item .ant-descriptions-item-label::after) {
+  display: none;
+}

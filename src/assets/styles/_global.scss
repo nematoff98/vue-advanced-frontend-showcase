@@ -1,0 +1,54 @@
+@import "var";
+
+.dark {
+  background: #232D3D;
+}
+
+.ant-layout {
+  background: var(--color-gray-50);
+}
+
+* {
+  font-family: Manrope, sans-serif;
+
+  &:not(.font-bold, .font-semibold, .font-light, .font-regular) {
+    font-weight: 500;
+  }
+}
+
+.scroll-hidden {
+  scrollbar-width: none
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none
+}
+
+.default-form {
+  .ant-form-item {
+    margin-bottom: 12px !important;
+  }
+}
+
+.max-lines-2 {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.max-lines-1 {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.chat-highlight {
+  background-color: var(--color-primary-50);
+  transition: background-color 1s ease-in-out;
+}

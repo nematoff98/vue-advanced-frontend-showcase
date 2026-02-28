@@ -1,0 +1,24 @@
+@use '@/assets/styles/utils' as utils;
+
+.ant-layout-sider-collapsed .collapse-trigger {
+  rotate: 180deg;
+  left: 58px;
+}
+
+.collapse-trigger {
+  position: absolute !important;
+  left: 250px;
+  top: 18px;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50%;
+  @apply bg-gray-800;
+  align-items: center;
+  justify-content: center;
+  border-color: #FFFFFF26;
+
+  svg {
+    width: utils.toRem(16px);
+    height: utils.toRem(16px);
+  }
+}

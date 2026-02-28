@@ -1,0 +1,96 @@
+.chat-container {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  height: calc(100vh - 84px);
+}
+
+.chat-list {
+  flex: 1 0 22.5%;
+	
+	@media (max-width: 100px) {
+		flex: 1 0 45%;
+	}
+	
+  @media (max-width: 1200px) {
+    flex: 1 0 45%;
+  }
+	
+	@media (max-width: 1400px) {
+		flex: 1 0 21%;
+	}
+}
+
+.chat-content {
+  flex: 1 1 54%;
+  @media (max-width: 1200px) {
+    flex: 1 1 55%;
+  }
+	
+	@media (max-width: 1400px) {
+		width: 40%;
+	}
+	
+	@media (max-width: 1000px) {
+		width: 40%;
+	}
+}
+
+.chats-empty-text {
+	flex: 1 1 76.5%;
+	
+	@media (max-width: 1200px) {
+		flex: 1 1 61%;
+	}
+	
+	@media (max-width: 1400px) {
+		width: 40%;
+	}
+	
+	@media (max-width: 1000px) {
+		width: 40%;
+	}
+}
+
+
+.chat-lead {
+  flex: 1 1 21%;
+	
+	@media (max-width: 1200px) {
+		flex: 1 1 61%;
+	}
+	
+	@media (max-width: 1400px) {
+		width: 40%;
+	}
+	
+	@media (max-width: 750px) {
+		width: 100%;
+	}
+}
+
+.offer {
+	&__new {
+		@apply bg-primary-100 text-primary-700
+	}
+	
+	&__Scammer {
+		@apply bg-yellow-100 text-yellow-600
+	}
+	
+	&__rejected, &__declined {
+		@apply bg-red-100 text-red-700
+	}
+	
+	&__accepted {
+		@apply bg-green-100 text-green-700
+	}
+	
+	&__active {
+		@apply bg-green-100 text-green-700
+	}
+	
+	&__inactive {
+		@apply bg-gray-100 text-gray-700
+	}
+}

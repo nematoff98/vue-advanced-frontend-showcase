@@ -1,0 +1,10 @@
+.dark {
+  .ant-notification-notice {
+    background-color: var(--color-gray-700);
+    border:  1px solid var(--color-gray-600);
+  }
+
+  .ant-notification-close-icon {
+    color: var(--color-white-100);
+  }
+}

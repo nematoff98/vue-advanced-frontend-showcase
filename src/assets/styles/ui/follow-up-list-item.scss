@@ -1,0 +1,9 @@
+@use '@/assets/styles/utils' as utils;
+
+.follow-up-item {
+  grid-template-columns: utils.toRem(110px) utils.toRem(1px) utils.toRem(110px) utils.toRem(1px) auto auto;
+
+  &:hover {
+    box-shadow: var(--bsh-stroke-normal);
+  }
+}

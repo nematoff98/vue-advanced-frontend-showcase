@@ -1,0 +1,23 @@
+<script lang="ts" setup>
+
+interface IconProps {
+  size?: number | string;
+}
+
+defineProps<IconProps>();
+</script>
+
+<template>
+  <svg :height="size" :width="size" fill="none" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M10.5 7.5V9.5C10.5 9.76522 10.3946 10.0196 10.2071 10.2071C10.0196 10.3946 9.76522 10.5 9.5 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V7.5M3.5 5L6 7.5M6 7.5L8.5 5M6 7.5V1.5"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.2" />
+  </svg>
+</template>
+
+<style lang="scss" scoped>
+
+</style>

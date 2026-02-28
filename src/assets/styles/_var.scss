@@ -1,0 +1,32 @@
+:root {
+	/* Font Sizes */
+	--fs-xxs: 10px;
+	--fs-xs: 12px;
+	--fs-s: 14px;
+	--fs-m: 16px;
+	--fs-l: 18px;
+	--fs-xl: 20px;
+	--fs-xxl: 24px;
+	--fs-3xl: 28px;
+	
+	/* Font Weights */
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+	
+	/* Box Shadows */
+	--bsh-sm: 0 4px 6px rgba(0, 0, 0, 0.06);
+	--bsh-md: 0 10px 16px rgba(0, 0, 0, 0.05);
+	--bsh-lg: 0 20px 30px rgba(0, 0, 0, 0.08);
+	--bsh-sm-center: 0 1px 6px rgba(0, 0, 0, 0.06);
+	--bsh-md-center: 0 1px 16px rgba(0, 0, 0, 0.05);
+	--bsh-lg-center: 0 1px 30px rgba(0, 0, 0, 0.08);
+	--bsh-stroke-normal: 0 0 0 4px #989DA51A;
+	--bsh-stroke-primary: 0 0 0 4px #93C5FD40;
+	--bsh-stroke-error: 0 0 0 4px #FCA5A540;
+	
+	/* Input styles */
+	--input-height: 44px;
+	--input-border-radius: 12px;
+}

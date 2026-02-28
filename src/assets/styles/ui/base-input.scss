@@ -1,0 +1,180 @@
+@import "../colors";
+@import "../var";
+
+.ant-input {
+  background: transparent;
+  border-color: var(--color-gray-200) !important;
+  color: var(--color-gray-700) !important;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: var(--input-border-radius);
+  transition: .2s all;
+
+  &.ant-input-lg {
+    height: var(--input-height) !important;
+    min-height: var(--input-height) !important;
+  }
+
+  &:focus:not(.ant-input-disabled), &:hover:not(.ant-input-disabled) {
+    box-shadow: var(--bsh-stroke-normal);
+    border-color: var(--color-gray-200);
+  }
+}
+
+.ant-input-password {
+  border-color: var(--color-gray-200) !important;
+
+  .ant-input {
+    box-shadow: unset !important;
+    border-color: unset !important;
+  }
+
+  &:focus:not(.ant-input-disabled), &:hover:not(.ant-input-disabled) {
+    box-shadow: var(--bsh-stroke-normal);
+    border-color: var(--color-gray-200);
+  }
+}
+
+.ant-input-affix-wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+  background: transparent;
+  border-color: var(--color-gray-200) !important;
+  color: var(--color-gray-700) !important;
+
+  &.ant-input-affix-wrapper-lg {
+    height: var(--input-height) !important;
+  }
+
+  .ant-input-lg {
+    height: 24px !important;
+    max-height: 24px;
+    min-height: 24px !important;
+  }
+
+  .ant-input {
+    box-shadow: unset !important;
+    border-color: unset !important;
+  }
+
+  &:focus:not(.ant-input-disabled), &:hover:not(.ant-input-disabled) {
+    box-shadow: var(--bsh-stroke-normal);
+    border-color: var(--color-gray-200);
+  }
+}
+
+.ant-input-prefix {
+  margin-inline-end: 0 !important;
+}
+
+.ant-input-affix-wrapper-focused:not(.ant-input-disabled) {
+  box-shadow: var(--bsh-stroke-normal);
+  border-color: var(--color-gray-200);
+}
+
+.ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: var(--color-gray-200);
+}
+
+.ant-input-affix-wrapper-status-error, .ant-input-status-error {
+  border-color: var(--color-red-300) !important;
+
+  .ant-input-prefix {
+    color: var(--color-red-300) !important;
+  }
+}
+
+.ant-form-item-required::after {
+  display: inline-block !important;
+  color: var(--color-primary-600) !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  content: "*" !important;
+}
+
+.ant-form-item-required::before {
+  display: none !important;
+}
+
+.ant-form-item-explain-error {
+  color: var(--color-red-500) !important;
+  font-size: 12px;
+  line-height: 16.8px;
+  margin-top: 6px;
+}
+
+.input-error-message {
+  margin-top: 6px !important;
+}
+
+.ant-form-item-label {
+  padding-bottom: 6px !important;
+
+  label {
+    font-size: 14px !important;
+    line-height: 19.6px;
+    //color: var(--color-gray-700)!important;
+    color: red !important;
+  }
+}
+
+.ant-input::placeholder, .ant-input-prefix, .ant-input-suffix {
+  color: var(--color-gray-400);
+}
+
+.ant-spin-spinning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-input-affix-wrapper-disabled {
+  background: var(--color-gray-100) !important;
+}
+
+.dark {
+  .ant-input, .ant-input-affix-wrapper {
+    background: transparent;
+    border-color: var(--color-gray-600) !important;
+    color: var(--color-white-100) !important;
+  }
+
+  .ant-input-show-count-suffix {
+    color: var(--color-white-100) !important;
+  }
+
+  .ant-input-affix-wrapper:hover,
+  .ant-input-affix-wrapper-focused,
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: var(--color-gray-200) !important;
+  }
+
+  .ant-input:hover,
+  .ant-input:focus,
+  .ant-input:not(.ant-input-disabled):hover {
+    border-color: var(--color-gray-200) !important;
+  }
+
+  .ant-input-affix-wrapper-disabled, .ant-input-disabled {
+    background: var(--color-gray-700) !important;
+  }
+
+  .ant-form-item-label {
+    label {
+      color: var(--color-gray-100) !important;
+    }
+  }
+
+  .ant-input-affix-wrapper-status-error, .ant-input-status-error {
+    border-color: var(--color-red-400) !important;
+
+    .ant-input-prefix {
+      color: var(--color-red-400) !important;
+    }
+  }
+
+  .ant-input {
+    color: var(--color-white-100) !important;
+  }
+}

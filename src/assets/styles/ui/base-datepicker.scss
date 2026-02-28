@@ -1,0 +1,108 @@
+@import "../colors";
+@import "../var";
+
+.ant-picker {
+	background: transparent;
+	border-color: var(--color-gray-200);
+	color: var(--color-gray-700);
+	padding-left: 16px!important;
+	padding-right: 16px!important;
+	transition: .2s all;
+	border-radius: var(--input-border-radius);
+	&.ant-picker-large {
+		height: var(--input-height)!important;
+	}
+	&:focus:not(.ant-input-disabled), &:hover:not(.ant-input-disabled) {
+		box-shadow: var(--bsh-stroke-normal)!important;
+		border-color: var(--color-gray-200)!important;
+	}
+}
+
+.ant-form-item-required::after {
+	display: inline-block!important;
+	color: var(--color-primary-600)!important;
+	font-size: 14px!important;
+	line-height: 1!important;
+	content: "*"!important;
+}
+
+.ant-form-item-required::before {
+	display: none!important;
+}
+
+.ant-form-item-explain-error {
+	color: var(--color-red-500)!important;
+	font-size: 12px;
+	line-height: 16.8px;
+	margin-top: 6px;
+}
+
+.input-error-message {
+	margin-top: 6px!important;
+}
+
+.ant-form-item-label {
+	padding-bottom: 6px!important;
+	label {
+		font-size: 14px!important;
+		line-height: 19.6px;
+		color: var(--color-gray-700)!important;
+	}
+}
+
+.dark {
+	.ant-picker {
+		background: transparent!important;
+		border-color: var(--color-gray-600)!important;
+		color: var(--color-white-100)!important;
+		input {
+			color: var(--color-white-100)!important;
+		}
+		&:focus:not(.ant-input-disabled), &:hover:not(.ant-input-disabled) {
+			box-shadow: var(--bsh-stroke-normal)!important;
+			border-color: var(--color-gray-700)!important;
+		}
+	}
+	.ant-form-item-label {
+		label {
+			color: var(--color-gray-100)!important;
+		}
+	}
+	.ant-select-selection-item, .ant-select-arrow {
+		color: var(--color-gray-100)!important;
+	}
+	.ant-picker-dropdown .ant-picker-panel-container {
+		background: var(--color-gray-800);
+		.ant-picker-cell.ant-picker-cell-in-view {
+			color: var(--color-gray-50);
+		}
+	}
+	.ant-picker-dropdown .ant-picker-content th,
+	.ant-picker-dropdown .ant-picker-header-view button,
+	.ant-picker-dropdown .ant-picker-header button {
+		color: var(--color-gray-50);
+	}
+	.ant-picker-dropdown .ant-picker-cell {
+		color: var(--color-gray-500);
+	}
+	.ant-empty-description {
+		color: white;
+	}
+}
+
+.ant-picker-input input::placeholder, .ant-picker-suffix {
+	color: var(--color-gray-400)!important;
+}
+
+
+.dark {
+	.ant-picker:hover,
+	.ant-picker-focused,
+	.ant-picker:not(.ant-picker-disabled):hover {
+		border-color: var(--color-gray-200) !important;
+	}
+
+	.ant-picker-disabled {
+		background: var(--color-gray-700) !important;
+	}
+}

@@ -1,0 +1,26 @@
+@import "../colors";
+
+.ant-switch {
+  min-width: 36px !important;
+  background-color: theme('colors.gray.100') !important;
+
+  &:hover {
+    background-color: theme('colors.gray.200') !important;
+  }
+
+  &.ant-switch-checked {
+    background-color: theme('colors.primary.600') !important;
+
+    &:hover {
+      background-color: theme('colors.primary.700') !important;
+    }
+  }
+}
+
+.dark .ant-switch {
+  background-color: var(--color-gray-700) !important;
+
+  &:hover {
+    background-color: var(--color-gray-600) !important;
+  }
+}

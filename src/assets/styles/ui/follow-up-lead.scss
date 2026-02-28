@@ -1,0 +1,43 @@
+@use '@/assets/styles/utils' as utils;
+
+.status-badge {
+  &.New {
+    @apply bg-yellow-100 text-yellow-600
+  }
+
+  &.Order {
+    @apply bg-teal-100 text-teal-700
+  }
+
+  &.Signed {
+    @apply bg-primary-100 text-primary-700
+  }
+
+  &.Paid {
+    @apply bg-lime-100 text-lime-700
+  }
+
+  &.Posted {
+    @apply bg-green-100 text-green-700
+  }
+
+  &.Picked-up {
+    @apply bg-indigo-100 text-indigo-700
+  }
+
+  &.Dispatched {
+    @apply bg-sky-100 text-sky-700
+  }
+
+  &.Archived {
+    @apply bg-red-100 text-red-700
+  }
+}
+
+:global(.description-item) {
+  padding-bottom: utils.toRem(8px) !important;
+}
+
+:global(.description-item .ant-descriptions-item-label::after) {
+  display: none;
+}

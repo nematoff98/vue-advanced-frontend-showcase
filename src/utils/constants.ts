@@ -1,0 +1,2 @@
+export const STORAGE_AUTH_TOKEN = 'token';
+export const CALL_IN_PROGRESS_STORAGE_KEY = 'CALL_IN_PROGRESS';
