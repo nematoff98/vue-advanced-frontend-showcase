@@ -114,7 +114,7 @@ const showConfirm = () => {
       h(
         'a',
         {
-          href: 'https://berocker.com/terms',
+          href: 'https://domain.com/terms',
           target: '_blank',
           rel: 'noopener noreferrer',
           style: { color: colors.primary[600] },

@@ -1,54 +1,58 @@
-# example-from-berocker
+# Advanced Vue 3 Enterprise Architecture 🚀
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository showcases a professional, scalable, and highly structured **Vue 3** application built with **TypeScript**. The architecture is designed for large-scale projects, emphasizing modularity, automated scaffolding, and clean code principles.
 
-## Recommended IDE Setup
+## 🛠 Tech Stack
+- **Framework:** Vue 3 (Composition API)
+- **Language:** TypeScript (Strict Mode)
+- **State Management:** Pinia
+- **Styling:** Tailwind CSS / SCSS
+- **HTTP Client:** Axios with custom Service Layer
+- **Real-time:** Pusher Integration
+- **Validation:** Vee-Validate
+- **Linting:** ESLint & Prettier
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🏗 Project Architecture & Directory Structure
 
-## Recommended Browser Setup
+The project follows a modular design pattern to ensure separation of concerns:
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **`src/views`**: Page-level components and routing entry points.
+- **`src/components`**: Reusable UI components.
+- **`src/composables`**: Encapsulated business logic and stateful functions.
+- **`src/layouts`**: Global application shells (e.g., `default.vue`).
+- **`src/services`**: A robust data-access layer (see [Service Pattern](#-service-pattern) for details).
+- **`src/plugins`**: Third-party library configurations (Pusher, Vee-validate, etc.).
+- **`src/store`**: Pinia modules for global state management.
+- **`src/utils`**: Helper functions, constants, formatting, and permission logic.
 
-## Type Support for `.vue` Imports in TS
+---
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 💎 Key Features & Engineering Excellence
 
-## Customize configuration
+### 📂 Service Pattern (Data Layer)
+Each module in the `services/` directory is standardized to ensure consistency:
+- `*.interface.ts`: Strongly typed data models.
+- `*.list.ts`: Enums and constant lists.
+- `*.service.ts`: API request logic.
+- `*.mapper.ts`: Data transformation logic (Backend to Frontend model mapping).
+- `index.ts`: Unified export point for the module.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### ⚙️ Automated Scaffolding
+To maintain architectural integrity, the project includes a custom service generator. This prevents manual errors and speeds up development.
+- **Command:** `npm run generate-service`
+- **Tooling:** Powered by `generate-template-files`, creating a complete service folder with all necessary boilerplate files instantly.
 
-## Project Setup
+### 🛡 Core API Service (`api.service.ts`)
+A centralized Axios wrapper that handles:
+- Base URL configuration via Environment Variables.
+- Global request/response interceptors.
+- Centralized **Error Handling** (e.g., 401 Unauthorized redirect to login).
+- Type-safe CRUD operations (GET, POST, PUT, DELETE).
 
-```sh
+---
+
+## 🚀 Getting Started
+
+### Installation
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```

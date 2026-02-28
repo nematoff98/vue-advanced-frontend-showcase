@@ -28,7 +28,7 @@ const toggleDarkMode = inject('toggleDarkMode') as (mode?: boolean) => void;
       :to="CHATS.path"
     >
       <Icon :icon="Icons.LOGO_ICON" class="flex-shrink-0" height="30px" width="40px" />
-      <span class="text-[23px]">BeRocker</span>
+      <span class="text-[23px]">SiteName</span>
     </RouterLink>
 
     <ul
@@ -148,7 +148,7 @@ const toggleDarkMode = inject('toggleDarkMode') as (mode?: boolean) => void;
     </div>
     <div class="flex justify-center pb-3 pt-3 border-t border-[#FFFFFF1A]">
       <a
-        href="https://help.berocker.com"
+        href="https://help.domain.com"
         target="_blank"
         rel="noopener noreferrer"
         class="text-white flex items-center"

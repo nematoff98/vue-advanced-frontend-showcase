@@ -5,7 +5,7 @@ import { copyToClipboard } from '@/utils';
 import { ref } from 'vue';
 import { LoginStage } from '@/services/auth';
 
-const TELEGRAM_LINK = 'https://t.me/berocker_bot';
+const TELEGRAM_LINK = 'https://t.me/bot_link';
 
 interface QrCodeProps {
   googleQrCode: string;
